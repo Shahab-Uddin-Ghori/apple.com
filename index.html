@@ -1,178 +1,244 @@
-/* Body Styles */
-body {
-  margin: 0 auto;
-  padding: 0 auto;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Apple</title>
+    <link rel="icon" type="image/png" href="./img/applelogo.png" />
+  </head>
 
-/* Navbar Styles */
-.nav-bar {
-  background-color: #171718;
-  height: auto;
-  padding: 13px;
-  text-align: center;
-  position: relative;
-  top: 0;
-  width: 98.3%;
-  z-index: 1000;
-}
-
-/* Navbar Link Styles */
-.navlink {
-  text-decoration: none;
-  color: #d3d3d4;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 500;
-  padding: 0px 16px;
-  display: inline-block;
-}
-
-/* Specific Icons Styles */
-#applelogo, #search, #bag {
-  width: 16px;
-  padding: 0px 20px;
-  vertical-align: text-bottom;
-  background-size: contain;
-}
-#search
-{
-  filter: brightness(150%);
-}
-#bag{
-  filter: brightness(1500%);
-}
-
-/* Hover Styles for Navbar Links */
-.navlink:hover {
-  color: rgb(170, 192, 249);
-}
-
-/* Main Image Styles */
-#mainimg, #img2, #v1, #img5, #img6 {
-  width: 100%;
-}
-
-/* Image Specific Styles */
-#img2 {
-  margin-top: -20px;
-}
-
-/* Chat Styles */
-.container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-/* Video Styles */
-video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Caption Styles */
-.caption {
-  position: absolute;
-  bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-/* Responsive Image Styles */
-.responsive-image {
-  width: 40px;
-  height: auto;
-  margin-right: 10px;
-}
-
-/* Responsive Text Styles */
-.responsive-text {
-  font-size: 1.5rem;
-  color: rgb(203, 203, 203);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Additional Image Styles */
-#img3 {
-  width: 50%;
-  text-align: right;
-}
-
-#img4 {
-  width: 50%;
-  text-align: left;
-}
-
-/* Paragraph Styles */
-.para {
-  width: 70%;
-  margin-left: 17%;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  color: rgba(0, 0, 0, 0.56);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Additional Text Styles */
-#applecare {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  color: rgba(0, 0, 0, 0.56);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Table Styles */
-table {
-  margin: 0 auto;
-}
-
-/* Table Header Styles */
-.thead {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  color: rgba(0, 0, 0, 0.88);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0 auto;
-}
-
-/* Table Body Styles */
-.tbody, td {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  color: rgba(0, 0, 0, 0.56);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px 30px;
-  text-decoration: none;
-  margin: 0 auto;
-}
-
-/* Table Header Specific Styles */
-th {
-  text-align: left;
-  padding: 5px 30px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  color: rgba(39, 38, 38, 0.88);
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 20px;
-  padding-bottom: 1px;
-  text-decoration: none;
-  margin: 0 auto;
-}
-
-/* Anchor Styles */
-a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.56);
-}
+  <body>
+    <header>
+      <div class="nav-bar">
+        <span class="navtext">
+          <img
+            src="./img/applelogo.png"
+            alt="apple"
+            id="applelogo"
+            class="navlink"
+          />
+          <a href="" class="navlink">Store</a>
+          <a href="" class="navlink">Mac</a>
+          <a href="" class="navlink">iPad</a>
+          <a href="" class="navlink">iPhone</a>
+          <a href="" class="navlink">Watch</a>
+          <a href="" class="navlink">Vision</a>
+          <a href="" class="navlink">AirPods</a>
+          <a href="" class="navlink">TV & Home</a>
+          <a href="" class="navlink">Entertaintment</a>
+          <a href="" class="navlink">Accessories</a>
+          <a href="" class="navlink">Support</a>
+          <a href=""
+            ><img
+              src="./img/search.png"
+              alt="search"
+              id="search"
+              inputmode="search"
+              class="navlink"
+          /></a>
+          <a href=""
+            ><img src="./img/applebag.png" alt="bag" id="bag" class="navlink"
+          /></a>
+        </span>
+      </div>
+    </header>
+    <main>
+      <div>
+        <img src="./img/mainimg.PNG" alt="main img" id="mainimg" />
+      </div>
+      <div>
+        <img src="./img/2ndimg.PNG" alt="2ndimg" id="img2" />
+      </div>
+      <div class="container">
+        <video
+          src="./video/video1.mp4"
+          controls
+          muted
+          id="v1"
+          autoplay
+          loop
+        ></video>
+        <div class="caption">
+          <img src="./img/applelogo.png" alt="" class="responsive-image" />
+          <span class="responsive-text">iPhone 15 Pro</span>
+        </div>
+      </div>
+      <div>
+        <img src="./img/img3.PNG" alt="img3" id="img3" /><img
+          src="./img/img4.PNG  "
+          alt="img4"
+          id="img4"
+        />
+      </div>
+      <div>
+        <img src="./img/img5.PNG" alt="img5" id="img5" />
+      </div>
+      <div>
+        <img src="./img/img6.PNG" alt="img6" id="img6" />
+      </div>
+      <br /><br /><br /><br /><br />
+      <div class="para">
+        <p>
+          1. Trade-in values will vary based on the condition, year, and
+          configuration of your eligible trade-in device. Not all devices are
+          eligible for credit. You must be at least 18 years old to be eligible
+          to trade in for credit or for an Apple Gift Card. Trade-in value may
+          be applied toward qualifying new device purchase, or added to an Apple
+          Gift Card. Actual value awarded is based on receipt of a qualifying
+          device matching the description provided when estimate was made. Sales
+          tax may be assessed on full value of a new device purchase. In-store
+          trade-in requires presentation of a valid photo ID (local law may
+          require saving this information). Offer may not be available in all
+          stores, and may vary between in-store and online trade-in. Some stores
+          may have additional requirements. Apple or its trade-in partners
+          reserve the right to refuse or limit quantity of any trade-in
+          transaction for any reason. More details are available from Apple’s
+          trade-in partner for trade-in and recycling of eligible devices.
+          Restrictions and limitations may apply.
+          <br /><br />
+          To access and use all Apple Card features and products available only
+          to Apple Card users, you must add Apple Card to Wallet on an iPhone or
+          iPad that supports and has the latest version of iOS or iPadOS. Apple
+          Card is subject to credit approval, available only for qualifying
+          applicants in the United States, and issued by Goldman Sachs Bank USA,
+          Salt Lake City Branch.
+          <br /><br />
+          If you reside in the U.S. territories, please call Goldman Sachs at
+          877-255-5923 with questions about Apple Card.
+          <br /><br />
+          Learn more about how Apple Card applications are evaluated at
+          <a href="support.apple.com/kb/HT209218." id="applecare"
+            >support.apple.com/kb/HT209218.</a
+          >
+          <br /><br />
+          A subscription is required for Apple TV+.
+        </p>
+        <br />
+        <br />
+        <hr />
+      </div>
+      <div>
+        <table>
+          <tr>
+            <th><a href="https://www.apple.com">Shop and Learn</a></th>
+            <th><a href="https://www.apple.com">Account</a></th>
+            <th><a href="https://www.apple.com">Apple Store</a></th>
+            <th><a href="https://www.apple.com">For Business</a></th>
+            <th><a href="https://www.apple.com">Apple Values</a></th>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">Store</a></td>
+            <td><a href="https://www.apple.com">Manage Your Apple ID</a></td>
+            <td><a href="https://www.apple.com">Find a Store</a></td>
+            <td><a href="https://www.apple.com">Apple and Business</a></td>
+            <td><a href="https://www.apple.com">Accessibility</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">Mac</a></td>
+            <td><a href="https://www.apple.com">Apple Store Account</a></td>
+            <td><a href="https://www.apple.com">Genius Bar</a></td>
+            <td><a href="https://www.apple.com">Shop for Business</a></td>
+            <td><a href="https://www.apple.com">Education</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">iPad</a></td>
+            <td><a href="https://www.apple.com">iCloud.com</a></td>
+            <td><a href="https://www.apple.com">Today at Apple</a></td>
+            <td><a href="https://www.apple.com">For Education</a></td>
+            <td><a href="https://www.apple.com">Environment</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">iPhone</a></td>
+            <td><a href="https://www.apple.com">Entertainment</a></td>
+            <td><a href="https://www.apple.com">Apple Camp</a></td>
+            <td><a href="https://www.apple.com">Apple and Education</a></td>
+            <td><a href="https://www.apple.com">Inclusion and Diversity</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">Watch</a></td>
+            <td><a href="https://www.apple.com">Apple One</a></td>
+            <td><a href="https://www.apple.com">Apple Store App</a></td>
+            <td><a href="https://www.apple.com">Shop for K-12</a></td>
+            <td><a href="https://www.apple.com">Privacy</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">Vision</a></td>
+            <td><a href="https://www.apple.com">Apple TV+</a></td>
+            <td><a href="https://www.apple.com">Certified Refurbished</a></td>
+            <td><a href="https://www.apple.com">Shop for College</a></td>
+            <td>
+              <a href="https://www.apple.com">Racial Equity and Justice</a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">AirPods</a></td>
+            <td><a href="https://www.apple.com">Apple Music</a></td>
+            <td><a href="https://www.apple.com">Apple Trade In</a></td>
+            <td><a href="https://www.apple.com">For Healthcare</a></td>
+            <td><a href="https://www.apple.com">Supplier Responsibility</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">TV & Home</a></td>
+            <td><a href="https://www.apple.com">Apple Arcade</a></td>
+            <td><a href="https://www.apple.com">Financing</a></td>
+            <td><a href="https://www.apple.com">Apple in Healthcare</a></td>
+            <td><a href="https://www.apple.com">About Apple</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">AirTag</a></td>
+            <td><a href="https://www.apple.com">Apple Fitness+</a></td>
+            <td><a href="https://www.apple.com">Carrier Deals at Apple</a></td>
+            <td><a href="https://www.apple.com">Health on Apple Watch</a></td>
+            <td><a href="https://www.apple.com">Newsroom</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">Accessories</a></td>
+            <td><a href="https://www.apple.com">Apple News+</a></td>
+            <td><a href="https://www.apple.com">Order Status</a></td>
+            <td>
+              <a href="https://www.apple.com">Health Records on iPhone</a>
+            </td>
+            <td><a href="https://www.apple.com">Apple Leadership</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">Gift Cards</a></td>
+            <td><a href="https://www.apple.com">Apple Podcasts</a></td>
+            <td><a href="https://www.apple.com">Shopping Help</a></td>
+            <td><a href="https://www.apple.com">For Government</a></td>
+            <td><a href="https://www.apple.com">Career Opportunities</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">Apple Wallet</a></td>
+            <td><a href="https://www.apple.com">Apple Books</a></td>
+            <td></td>
+            <td><a href="https://www.apple.com">Shop for Government</a></td>
+            <td><a href="https://www.apple.com">Investors</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.apple.com">Wallet</a></td>
+            <td><a href="https://www.apple.com">App Store</a></td>
+            <td></td>
+            <td><a href="https://www.apple.com">Shop for Veterans</a></td>
+            <td><a href="https://www.apple.com">Ethics & Compliance</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="https://www.apple.com">Events</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="https://www.apple.com">Contact Apple</a></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
