@@ -1,21 +1,22 @@
+/* Body Styles */
 body {
   margin: 0 auto;
   padding: 0 auto;
 }
 
+/* Navbar Styles */
 .nav-bar {
   background-color: #171718;
-  max-width: calc(100% - 10px); /* screen k according width control */
-  height: auto; /*screen k according height control*/
+  height: auto;
   padding: 13px;
   text-align: center;
-
-  position: relative; /* Navbar fixed position  */
-  top: 0; /* Navbar ko screen ke top par rakhny k lye */
-  width: 100%; /* Navbar ki width puri screen ke barabar ho */
-  z-index: 1000; /* Navbar ko top-most layer par rakhe */
+  position: relative;
+  top: 0;
+  width: 98.3%;
+  z-index: 1000;
 }
 
+/* Navbar Link Styles */
 .navlink {
   text-decoration: none;
   color: #d3d3d4;
@@ -28,97 +29,87 @@ body {
   display: inline-block;
 }
 
-#applelogo {
+/* Specific Icons Styles */
+#applelogo, #search, #bag {
   width: 16px;
   padding: 0px 20px;
   vertical-align: text-bottom;
   background-size: contain;
 }
-.navtext {
-  text-align: center;
-}
-.navlink:hover {
-  color: rgb(170, 169, 169);
-}
-#search {
-  width: 16px;
-  padding: 0px 20px;
-  vertical-align: text-bottom;
-  background-size: contain;
+#search
+{
   filter: brightness(150%);
 }
-#bag {
-  width: 18px;
-  padding: 0px 20px;
-  vertical-align: text-bottom;
-  background-size: contain;
-  filter: brightness(250%);
+#bag{
+  filter: brightness(1500%);
 }
-#mainimg {
+
+/* Hover Styles for Navbar Links */
+.navlink:hover {
+  color: rgb(170, 192, 249);
+}
+
+/* Main Image Styles */
+#mainimg, #img2, #v1, #img5, #img6 {
   width: 100%;
 }
+
+/* Image Specific Styles */
 #img2 {
-  width: 100%;
   margin-top: -20px;
 }
-#v1 {
-  width: 100%;
-}
 
-/* chat */
-
-/* Set the container position and dimensions */
+/* Chat Styles */
 .container {
   position: relative;
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: flex-end; /* Align content to the bottom */
+  justify-content: center;
+  align-items: flex-end;
 }
 
-/* Video styling */
+/* Video Styles */
 video {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Position the caption container */
+/* Caption Styles */
 .caption {
   position: absolute;
-  bottom: 10px; /* Adjust the distance from the bottom */
+  bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-/* Responsive image style */
+/* Responsive Image Styles */
 .responsive-image {
-  width: 40px; /* Adjust the width as needed */
-  height: auto; /* Adjust the height as needed */
-  margin-right: 10px; /* Adds some spacing between image and text */
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
 }
 
-/* Caption text style */
+/* Responsive Text Styles */
 .responsive-text {
-  font-size: 1.5rem; /* Adjust the font size as needed */
+  font-size: 1.5rem;
   color: rgb(203, 203, 203);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+/* Additional Image Styles */
 #img3 {
   width: 50%;
   text-align: right;
 }
+
 #img4 {
   width: 50%;
   text-align: left;
 }
-#img5 {
-  width: 100%;
-}
-#img6 {
-  width: 100%;
-}
+
+/* Paragraph Styles */
 .para {
   width: 70%;
   margin-left: 17%;
@@ -128,10 +119,60 @@ video {
   color: rgba(0, 0, 0, 0.56);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Additional Text Styles */
 #applecare {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.56);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Table Styles */
+table {
+  margin: 0 auto;
+}
+
+/* Table Header Styles */
+.thead {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.88);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+/* Table Body Styles */
+.tbody, td {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.56);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 30px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+/* Table Header Specific Styles */
+th {
+  text-align: left;
+  padding: 5px 30px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: rgba(39, 38, 38, 0.88);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+/* Anchor Styles */
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.56);
 }
